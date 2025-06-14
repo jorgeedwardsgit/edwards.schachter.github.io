@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electrónica Industrial - Soluciones a Medida</title>
-    <!-- Incluye Tailwind CSS -->
+    <!-- Descripción Meta para SEO y cómo aparece en los resultados de búsqueda -->
+    <meta name="description" content="Edwards.Schachter - Soluciones integrales de electrónica industrial, desarrollo, instalación, mantenimiento y reparación. Expertos en automatización y robótica.">
+    <!-- Favicon para la pestaña del navegador. Asegúrate de tener un archivo favicon.ico en la raíz. -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Incluye Tailwind CSS para el estilizado -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuración de la fuente Inter -->
+    <!-- Preconexión a Google Fonts para una carga más rápida -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Configuración de la fuente Inter desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Define la fuente principal para todo el cuerpo del documento */
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Estilos personalizados para el formulario para mejorar la apariencia en navegadores */
+        /* Estilos personalizados para los campos de entrada y textarea, aplicando clases de Tailwind */
         input[type="text"],
         input[type="email"],
         input[type="tel"],
         textarea {
             @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
         }
+        /* Estilos personalizados para el botón de envío, aplicando clases de Tailwind */
         button[type="submit"] {
             @apply bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300 ease-in-out;
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- Encabezado -->
+    <!-- Encabezado de la página -->
     <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-6 shadow-lg rounded-b-lg">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             <div class="text-3xl font-bold mb-4 md:mb-0">
                 EDWARDS.SCHACHTER
                 <p class="text-sm font-light mt-1">Electrónica Industrial | Soluciones Integrales</p>
             </div>
+            <!-- Navegación principal -->
             <nav>
                 <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-lg">
                     <li><a href="#quienes-somos" class="hover:text-blue-200 transition-colors duration-300">Quiénes Somos</a></li>
@@ -175,14 +185,17 @@
                     </div>
                 </div>
 
-                <form class="space-y-6">
+                <!-- Formulario de Contacto -->
+                <!-- El atributo 'action' apunta a la URL de Formspree y 'method' es POST -->
+                <form action="https://formspree.io/f/xjkrrknw" method="POST" class="space-y-6">
                     <div>
                         <label for="name" class="block text-gray-800 text-lg font-semibold mb-2">Nombre Completo:</label>
                         <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div>
                         <label for="email" class="block text-gray-800 text-lg font-semibold mb-2">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <!-- El 'name="_replyto"' es crucial para que Formspree envíe las respuestas a este email -->
+                        <input type="email" id="email" name="_replyto" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div>
                         <label for="phone" class="block text-gray-800 text-lg font-semibold mb-2">Teléfono (Opcional):</label>
@@ -210,12 +223,14 @@
                 <!-- Enlaces a redes sociales (ejemplo, puedes añadir más o modificar) -->
                 <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 01-12 0c0-3.314 2.686-6 6-6s6 2.686 6 6zm-11.758 0a5.758 5.758 0 1011.516 0 5.758 5.758 0 00-11.516 0zM10 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
-                    <!-- Icono de LinkedIn o cualquier otra red social -->
+                    <!-- Icono de LinkedIn o cualquier otra red social. Asegúrate de vincular a tu perfil real. -->
                 </a>
                 <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM5.428 11.196L8 13.914l4.572-4.572a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414z"></path></svg>
-                    <!-- Otro icono de red social -->
+                    <!-- Otro icono de red social. Asegúrate de vincular a tu perfil real. -->
                 </a>
+                <!-- Enlace a la política de privacidad (debes crear el archivo politica-privacidad.html) -->
+                <a href="/politica-privacidad.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Política de Privacidad</a>
             </div>
         </div>
     </footer>
