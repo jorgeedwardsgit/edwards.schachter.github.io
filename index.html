@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónica Industrial - Soluciones a Medida</title>
+    <!-- Incluye Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de la fuente Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos personalizados para el formulario para mejorar la apariencia en navegadores */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+        }
+        button[type="submit"] {
+            @apply bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300 ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Encabezado -->
+    <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-6 shadow-lg rounded-b-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-3xl font-bold mb-4 md:mb-0">
+                EDWARDS.SCHACHTER
+                <p class="text-sm font-light mt-1">Electrónica Industrial | Soluciones Integrales</p>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-lg">
+                    <li><a href="#quienes-somos" class="hover:text-blue-200 transition-colors duration-300">Quiénes Somos</a></li>
+                    <li><a href="#servicios" class="hover:text-blue-200 transition-colors duration-300">Nuestros Servicios</a></li>
+                    <li><a href="#por-que-elegirnos" class="hover:text-blue-200 transition-colors duration-300">Por Qué Elegirnos</a></li>
+                    <li><a href="#contacto" class="hover:text-blue-200 transition-colors duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="container mx-auto px-4 py-16 text-center md:text-left">
+        <div class="bg-white p-8 rounded-lg shadow-xl border border-gray-200">
+            <h2 class="text-4xl font-extrabold text-blue-700 mb-6 border-b-4 border-blue-500 pb-2 inline-block">Quiénes Somos</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                En <strong class="text-blue-600">Edwards.Schachter</strong>, somos un grupo de profesionales, dedicados a ofrecer soluciones integrales, desarrollo, instalación, mantenimiento y reparación de *dispositivos y tecnologías electrónicas para controlar, supervisar y optimizar procesos en entornos industriales.*
+                <br><br>
+                Trabajamos con:
+            </p>
+            <ul class="list-disc list-inside text-lg text-gray-700 mt-4 space-y-2 text-left md:ml-8">
+                <li>*Electrónica discreta, integrada y microcontroladores.*</li>
+                <li>*Automatización y robótica.*</li>
+                <li>*Electrónica de potencia.*</li>
+            </ul>
+            <p class="text-lg leading-relaxed text-gray-700 mt-4">
+                Estamos comprometidos con la excelencia, la eficiencia y la innovación. Entendemos las exigencias de la industria moderna y proveemos un servicio confiable y de alta calidad para garantizar la continuidad operativa de tu empresa.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Nuestros Servicios -->
+    <section id="servicios" class="bg-blue-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-blue-700 text-center mb-10 border-b-4 border-blue-500 pb-2 inline-block mx-auto block">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1: Reparación y Mantenimiento -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-blue-200 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4 flex items-center">
+                        <svg class="w-7 h-7 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v16a1 1 0 01-1.707.707L6.3 15.3A1 1 0 006 14.586V5.414a1 1 0 00-.707-.707L1.046 8.7A1 1 0 012 9h16a1 1 0 01-.707 1.707L13.7 15.3A1 1 0 0014 14.586V5.414a1 1 0 00-.707-.707L11.3 1.046z" clip-rule="evenodd"></path></svg>
+                        Reparación y Mantenimiento
+                    </h3>
+                    <ul class="list-disc text-gray-700 space-y-2">
+                        <li>Limpieza, inspección y restauración de tarjetas electrónicas.</li>
+                        <li>Mantenimiento preventivo y correctivo para prolongar la vida útil de tus equipos.</li>
+                    </ul>
+                    <p class="text-gray-700 mt-4 mb-2 font-semibold">Nuestros procesos incluyen:</p>
+                    <ul class="list-none text-gray-700 space-y-3 ml-8">
+                        <li>&raquo; Limpieza superficial.</li>
+                        <li>&raquo; Limpieza profunda.</li>
+                        <li>&raquo; Reparación de pistas.</li>
+                        <li>&raquo; Sustitución de componentes deteriorados.</li>
+                        <li>&raquo; Pruebas de transductores (sensores y actuadores).</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2: Diseño y Desarrollo a Medida -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-blue-200 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4 flex items-center">
+                        <svg class="w-7 h-7 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 3.5a1.5 1.5 0 013 0V6a1.5 1.5 0 01-3 0V3.5z"></path><path fill-rule="evenodd" d="M11.5 6.942V12a1 1 0 11-2 0V6.942a4 4 0 102 0zM10 16a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        Diseño y Desarrollo a Medida
+                    </h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Creación de soluciones electrónicas personalizadas para automatización y control.</li>
+                        <li>Proyectos con microcontroladores y sistemas embebidos.</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 5: Servicio de Urgencias 24/7 (Opcional) -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-blue-200 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4 flex items-center">
+                        <svg class="w-7 h-7 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                        Servicio de Urgencias 24/7
+                    </h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Soporte técnico y reparación en sitio para situaciones críticas.</li>
+                        <li>Disponibilidad inmediata para minimizar tiempos de inactividad.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Por Qué Elegirnos -->
+    <section id="por-que-elegirnos" class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-extrabold text-blue-700 text-center mb-10 border-b-4 border-blue-500 pb-2 inline-block mx-auto block">¿Por Qué Elegirnos?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-8 rounded-lg shadow-xl border border-gray-200">
+            <div class="flex flex-col items-center text-center p-4 rounded-md bg-blue-50">
+                <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6a2 2 0 100 4 2 2 0 000-4zm-2 4a4 4 0 118 0 4 4 0 01-8 0zm6 10a8 8 0 110-16 8 8 0 010 16zm-3.5-7.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" clip-rule="evenodd"></path></svg>
+                <h3 class="text-xl font-bold text-blue-600 mb-2">Experiencia y Conocimiento</h3>
+                <p class="text-gray-700">Profesionales capacitados con experiencia en una amplia gama de equipos y sistemas electrónicos.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4 rounded-md bg-blue-50">
+                <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-.458-13.068a.5.5 0 00-.736.65L9.36 9.4l-2.052.373a.5.5 0 00-.317.915l2.03.882-2.03.882a.5.5 0 00.317.915l2.052.373-.354 2.818a.5.5 0 00.736.65l2.42-2.126 2.42 2.126a.5.5 0 00.736-.65l-.354-2.818 2.052-.373a.5.5 0 00.317-.915l-2.03-.882 2.03-.882a.5.5 0 00-.317-.915l-2.052-.373.354-2.818a.5.5 0 00-.736-.65L10 4.932z" clip-rule="evenodd"></path></svg>
+                <h3 class="text-xl font-bold text-blue-600 mb-2">Diagnóstico Preciso y Soluciones Efectivas</h3>
+                <p class="text-gray-700">Utilizamos tecnología de punta para diagnosticar problemas con precisión y ofrecer soluciones duraderas.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4 rounded-md bg-blue-50">
+                <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                <h3 class="text-xl font-bold text-blue-600 mb-2">Compromiso con la Calidad</h3>
+                <p class="text-gray-700">Nos regimos por los más altos estándares de calidad en cada servicio que ofrecemos, garantizando resultados confiables.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4 rounded-md bg-blue-50">
+                <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 7.502a4 4 0 00-7.86 0H.5A.5.5 0 000 8c0 1.933.824 3.79 2.298 5.165A8.91 8.0 0 0010 18c1.332 0 2.597-.333 3.702-.911A7.447 7.0 0 0019.5 8a.5.5 0 00-.5-.5h-6.07z"></path></svg>
+                <h3 class="text-xl font-bold text-blue-600 mb-2">Atención Personalizada</h3>
+                <p class="text-gray-700">Ofrecemos un servicio adaptado a necesidades específicas, con un enfoque en la satisfacción del cliente.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4 rounded-md bg-blue-50">
+                <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-4.707-8.707a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l6-6a1 1 0 00-1.414-1.414L9 12.586 6.293 9.707z" clip-rule="evenodd"></path></svg>
+                <h3 class="text-xl font-bold text-blue-600 mb-2">Rapidez y Eficiencia</h3>
+                <p class="text-gray-700">Minimizamos los tiempos de inactividad de tus equipos, optimizando tus procesos productivos.</p>
+            </div>
+            <div class="flex flex-col items-center text-center p-4 rounded-md bg-blue-50">
+                <svg class="w-12 h-12 text-blue-600 mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                <h3 class="text-xl font-bold text-blue-600 mb-2">Precios Competitivos</h3>
+                <p class="text-gray-700">Ofrecemos tarifas justas y transparentes sin comprometer la calidad del servicio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-blue-700 text-center mb-10 border-b-4 border-blue-500 pb-2 inline-block mx-auto block">Contáctanos</h2>
+            <div class="bg-white p-8 rounded-lg shadow-xl border border-gray-200 max-w-2xl mx-auto">
+                <p class="text-lg text-gray-700 mb-6 text-center">
+                    ¿Necesitas ayuda con tus sistemas electrónicos industriales? ¡No dudes en contactarnos!
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <p class="text-xl font-semibold text-blue-600 mb-2">Teléfono:</p>
+                        <a href="tel:0347615306609" class="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300">0 3476 - 15 306609</a>
+                    </div>
+                    <div>
+                        <p class="text-xl font-semibold text-blue-600 mb-2">WhatsApp:</p>
+                        <a href="https://wa.me/3476306609" target="_blank" class="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300">3476 - 306609</a>
+                    </div>
+                    <div class="col-span-1 md:col-span-2">
+                        <p class="text-xl font-semibold text-blue-600 mb-2">Correo Electrónico:</p>
+                        <a href="mailto:edwards.schachter@gmail.com" class="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300">edwards.schachter@gmail.com</a>
+                    </div>
+                </div>
+
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-800 text-lg font-semibold mb-2">Nombre Completo:</label>
+                        <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-800 text-lg font-semibold mb-2">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-gray-800 text-lg font-semibold mb-2">Teléfono (Opcional):</label>
+                        <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-800 text-lg font-semibold mb-2">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-600 text-white py-3 px-8 rounded-md hover:bg-blue-700 transition duration-300 ease-in-out font-bold text-lg shadow-lg">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-white py-8 mt-10 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 EDWARDS.SCHACHTER. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <!-- Enlaces a redes sociales (ejemplo, puedes añadir más o modificar) -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 01-12 0c0-3.314 2.686-6 6-6s6 2.686 6 6zm-11.758 0a5.758 5.758 0 1011.516 0 5.758 5.758 0 00-11.516 0zM10 12a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                    <!-- Icono de LinkedIn o cualquier otra red social -->
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM5.428 11.196L8 13.914l4.572-4.572a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414z"></path></svg>
+                    <!-- Otro icono de red social -->
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
